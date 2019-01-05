@@ -11,12 +11,12 @@
 		<br>
 		<form id="form" runat="server">
 			Name:<br>
-			<input type = "email" name = "name"><br>
+			<input type = "text" name = "name"><br>
 			<br>
 			Gender:<br>
-			<input type="radio" ID = "gender" name="gender" value="male" checked> Male<br>
-			<input type="radio" ID = "gender" name="gender" value="female"> Female<br>
-			<input type="radio" ID = "gender" name="gender" value="other"> Other <br>
+			<input type="radio" id = "gender" name="gender" value="male" checked> Male<br>
+			<input type="radio" id = "gender" name="gender" value="female"> Female<br>
+			<input type="radio" id = "gender" name="gender" value="other"> Other <br>
 			<br>
 			Location:<br>
 			<input type = "text" name = "location">
@@ -239,6 +239,10 @@
 			Phone Number:<br>
 			<input type = "tel" name = "location"><br>
 			<br>
+			Other Information:<br>
+			<textarea cols = "50" rows = "5" id = "bio"></textarea><br>
+			<br>
+			<!-- Allows a preview of the picture -->
 			Upload your profile picture:<br>
 			<input type = "file" name = "propic" id = "propic" accept="image/*" />
 			<img id="preview" src="#" alt="" />
@@ -258,32 +262,6 @@
 				}
 			</script>
 			<br>
-			Computer science:<br>
-			<input type="range" min="1" max="7" value="4" class="slider" id="cs">
-			<span id="b" style="font-weight:bold;color:red"></span><br>
-			<script>
-				var sCS = document.getElementById("cs");
-				var x = document.getElementById("b");
-				x.innerHTML = sCS.value;
-
-				sCS.oninput = function() {
-					x.innerHTML = this.value;
-				}
-			</script>
-			<br>
-			Web Design:<br>
-			<input type="range" min="1" max="7" value="4" class="slider" id="wd">
-			<span id="c" style="font-weight:bold;color:red"></span><br>
-			<script>
-				var sWD = document.getElementById("wd");
-				var w = document.getElementById("c");
-				w.innerHTML = sWD.value;
-
-				sWD.oninput = function() {
-					w.innerHTML = this.value;
-				}
-			</script>
-			<br>
 			Game Design:<br>
 			<input type="range" min="1" max="7" value="4" class="slider" id="gd">
 			<span id="d" style="font-weight:bold;color:red"></span><br>
@@ -294,6 +272,19 @@
 
 				sGD.oninput = function() {
 					v.innerHTML = this.value;
+				}
+			</script>
+			<br>
+			Android App Development:<br>
+			<input type="range" min="1" max="7" value="4" class="slider" id="aad">
+			<span id="q" style="font-weight:bold;color:red"></span><br>
+			<script>
+				var sAAD = document.getElementById("aad");
+				var i = document.getElementById("q");
+				i.innerHTML = sAAD.value;
+
+				sAAD.oninput = function() {
+					i.innerHTML = this.value;
 				}
 			</script>
 			<br>
@@ -337,15 +328,145 @@
 			</script>
 			<br>
 			Systems Design:<br>
-			<input type="range" min="1" max="7" value="4" class="slider" id="se">
+			<input type="range" min="1" max="7" value="4" class="slider" id="sd">
 			<span id="h" style="font-weight:bold;color:red"></span><br>
 			<script>
-				var sSE = document.getElementById("se");
+				var sSD = document.getElementById("sd");
 				var r = document.getElementById("h");
-				r.innerHTML = sSE.value;
+				r.innerHTML = sSD.value;
 
-				sSE.oninput = function() {
+				sSD.oninput = function() {
 					r.innerHTML = this.value;
+				}
+			</script>
+			<br>
+			Java:<br>
+			<input type="range" min="1" max="7" value="4" class="slider" id="java">
+			<span id="i" style="font-weight:bold;color:red"></span><br>
+			<script>
+				var sJA = document.getElementById("java");
+				var q = document.getElementById("i");
+				q.innerHTML = sJA.value;
+
+				sJA.oninput = function() {
+					q.innerHTML = this.value;
+				}
+			</script>
+			<br>
+			C++:<br>
+			<input type="range" min="1" max="7" value="4" class="slider" id="cpp">
+			<span id="j" style="font-weight:bold;color:red"></span><br>
+			<script>
+				var sCPP = document.getElementById("cpp");
+				var p = document.getElementById("j");
+				p.innerHTML = sCPP.value;
+
+				sCPP.oninput = function() {
+					p.innerHTML = this.value;
+				}
+			</script>
+			<br>
+			C#:<br>
+			<input type="range" min="1" max="7" value="4" class="slider" id="cs">
+			<span id="b" style="font-weight:bold;color:red"></span><br>
+			<script>
+				var sCS = document.getElementById("cs");
+				var x = document.getElementById("b");
+				x.innerHTML = sCS.value;
+
+				sCS.oninput = function() {
+					x.innerHTML = this.value;
+				}
+			</script>
+			<br>
+			C:<br>
+			<input type="range" min="1" max="7" value="4" class="slider" id="co">
+			<span id="c" style="font-weight:bold;color:red"></span><br>
+			<script>
+				var sC = document.getElementById("co");
+				var w = document.getElementById("c");
+				w.innerHTML = sC.value;
+
+				sC.oninput = function() {
+					w.innerHTML = this.value;
+				}
+			</script>
+			<br>
+			HTML:<br>
+			<input type="range" min="1" max="7" value="4" class="slider" id="ht">
+			<span id="k" style="font-weight:bold;color:red"></span><br>
+			<script>
+				var sHT = document.getElementById("ht");
+				var o = document.getElementById("k");
+				o.innerHTML = sHT.value;
+
+				sHT.oninput = function() {
+					o.innerHTML = this.value;
+				}
+			</script>
+			<br>
+			CSS:<br>
+			<input type="range" min="1" max="7" value="4" class="slider" id="css">
+			<span id="l" style="font-weight:bold;color:red"></span><br>
+			<script>
+				var sCSS = document.getElementById("css");
+				var n = document.getElementById("l");
+				n.innerHTML = sCSS.value;
+
+				sCSS.oninput = function() {
+					n.innerHTML = this.value;
+				}
+			</script>
+			<br>
+			JavaScript:<br>
+			<input type="range" min="1" max="7" value="4" class="slider" id="jas">
+			<span id="m" style="font-weight:bold;color:red"></span><br>
+			<script>
+				var sJAS = document.getElementById("jas");
+				var m = document.getElementById("m");
+				m.innerHTML = sJAS.value;
+
+				sJAS.oninput = function() {
+					m.innerHTML = this.value;
+				}
+			</script>
+			<br>
+			SQL:<br>
+			<input type="range" min="1" max="7" value="4" class="slider" id="sql">
+			<span id="n" style="font-weight:bold;color:red"></span><br>
+			<script>
+				var sSQL = document.getElementById("sql");
+				var l = document.getElementById("n");
+				l.innerHTML = sSQL.value;
+
+				sSQL.oninput = function() {
+					l.innerHTML = this.value;
+				}
+			</script>
+			<br>
+			Python:<br>
+			<input type="range" min="1" max="7" value="4" class="slider" id="py">
+			<span id="o" style="font-weight:bold;color:red"></span><br>
+			<script>
+				var sPY = document.getElementById("py");
+				var k = document.getElementById("o");
+				k.innerHTML = sPY.value;
+
+				sPY.oninput = function() {
+					k.innerHTML = this.value;
+				}
+			</script>
+			<br>
+			XML:<br>
+			<input type="range" min="1" max="7" value="4" class="slider" id="xml">
+			<span id="p" style="font-weight:bold;color:red"></span><br>
+			<script>
+				var sXML = document.getElementById("xml");
+				var j = document.getElementById("p");
+				j.innerHTML = sXML.value;
+
+				sXML.oninput = function() {
+					j.innerHTML = this.value;
 				}
 			</script>
 			<br>
