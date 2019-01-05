@@ -1,0 +1,16 @@
+body{
+--backcol:#acfca6;
+--textcol:#000000;
+--margin:4px;
+--padding:8px;
+/*.basic{*/
+font-family:'Roboto', sans-serif;
+text-align:center;
+color:var(--textcol);
+background-color:var(--backcol);
+height:100%
+}
+
+h1{
+color:#66ce5f;
+}
