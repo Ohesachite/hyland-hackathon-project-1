@@ -1,4 +1,8 @@
-
+input{
+width:40%;
+border:1px solid black;
+outline:none;
+}
 select{
 
  width: 63%;
@@ -27,7 +31,7 @@ hr {
 }
 
 /* Set a style for all buttons */
-button {
+input[type=submit] {
   background-color: #4CAF50;
   color: white;
   padding: 14px 20px;
@@ -71,4 +75,88 @@ button:hover {
   .cancelbtn, .signupbtn {
     width: 100%;
   }
+}
+
+.checkboxes{
+display:grid;
+grid-template-columns:2;
+text-align:left;
+}
+
+#col1{
+grid-column-start:1;
+grid-column-end:2;
+}
+
+#col2{
+grid-column-start:2;
+grid-column-end:3;
+}
+
+#col1>p{
+border-style:solid;
+border-color:#aaa;
+border-width:0px 0px 2px 0px;
+}
+.row0{
+grid-row-start:1;
+grid-row-end:2;
+
+}
+
+.row1{
+grid-row-start:2;
+grid-row-end:3;
+}
+
+
+.row2{
+grid-row-start:3;
+grid-row-end:4;
+}
+
+.row3{
+grid-row-start:4;
+grid-row-end:5;
+}
+
+.row4{
+grid-row-start:5;
+grid-row-end:6;
+}
+
+
+.row5{
+grid-row-start:6;
+grid-row-end:7;
+}
+
+.row6{
+grid-row-start:7;
+grid-row-end:8;
+}
+
+.row7{
+grid-row-start:8;
+grid-row-end:9;
+}
+
+.row8{
+grid-row-start:9;
+grid-row-end:10;
+}
+
+.row9{
+grid-row-start:10;
+grid-row-end:11;
+}
+
+.row10{
+grid-row-start:11;
+grid-row-end:12;
+}
+
+.row11{
+grid-row-start:12;
+grid-row-end:13;
 }
