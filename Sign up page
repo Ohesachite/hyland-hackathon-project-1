@@ -3,6 +3,7 @@
 
 <head>
     <h1>Sign up</h1>
+    <link rel="stylesheet" type="text/css" href="Sign_up_form.css">
 </head>
 
 <body>
