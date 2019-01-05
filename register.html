@@ -2,20 +2,26 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="generalC.css">
-		<link rel="stylesheet" type="text/css" href="registerC.css">
+		<link rel="stylesheet" type="text/css" href="create profile.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<meta charset = "UTF-8">
 	</head>
 	<body>
 		<h1>Register</h1><hr>
 		<br>
-		<form id="form">
+		<form id="form" runat="server">
 			Name:<br>
 			<input type = "email" name = "name"><br>
+			<br>
+			Gender:<br>
+			<input type="radio" ID = "gender" name="gender" value="male" checked> Male<br>
+			<input type="radio" ID = "gender" name="gender" value="female"> Female<br>
+			<input type="radio" ID = "gender" name="gender" value="other"> Other <br>
 			<br>
 			Location:<br>
 			<input type = "text" name = "location">
 			<br>
-			<select >
+			<select>
 				<option value="AFG">Afghanistan</option>
 				<option value="ALA">Åland Islands</option>
 				<option value="ALB">Albania</option>
@@ -46,7 +52,7 @@
 				<option value="BIH">Bosnia and Herzegovina</option>
 				<option value="BWA">Botswana</option>
 				<option value="BRA">Brazil</option>
-				<option value="BRN">Brunei Darussalam</option>
+				<option value="BRN">Brunei</option>
 				<option value="BGR">Bulgaria</option>
 				<option value="BFA">Burkina Faso</option>
 				<option value="BDI">Burundi</option>
@@ -62,12 +68,10 @@
 				<option value="COM">Comoros</option>
 				<option value="COG">Congo, Republic of</option>
 				<option value="COD">Congo, the Democratic Republic of the</option>
-				<option value="COK">Cook Islands</option>
 				<option value="CRI">Costa Rica</option>
 				<option value="CIV">Côte d'Ivoire</option>
 				<option value="HRV">Croatia</option>
 				<option value="CUB">Cuba</option>
-				<option value="CUW">Curaçao</option>
 				<option value="CYP">Cyprus</option>
 				<option value="CZE">Czech Republic</option>
 				<option value="DNK">Denmark</option>
@@ -234,6 +238,116 @@
 			<br>
 			Phone Number:<br>
 			<input type = "tel" name = "location"><br>
+			<br>
+			Upload your profile picture:<br>
+			<input type = "file" name = "propic" id = "propic" accept="image/*" />
+			<img id="preview" src="#" alt="" />
+			<script src = "image preview.js"></script>
+			<h3>Rate your skills in...</h3><br>
+			<br>
+			Computer programming:<br>
+			<input type="range" min="1" max="7" value="4" class="slider" id="cp">
+			<span id="a" style="font-weight:bold;color:red"></span><br>
+			<script>
+				var sCP = document.getElementById("cp");
+				var y = document.getElementById("a");
+				y.innerHTML = sCP.value;
+
+				sCP.oninput = function() {
+					y.innerHTML = this.value;
+				}
+			</script>
+			<br>
+			Computer science:<br>
+			<input type="range" min="1" max="7" value="4" class="slider" id="cs">
+			<span id="b" style="font-weight:bold;color:red"></span><br>
+			<script>
+				var sCS = document.getElementById("cs");
+				var x = document.getElementById("b");
+				x.innerHTML = sCS.value;
+
+				sCS.oninput = function() {
+					x.innerHTML = this.value;
+				}
+			</script>
+			<br>
+			Web Design:<br>
+			<input type="range" min="1" max="7" value="4" class="slider" id="wd">
+			<span id="c" style="font-weight:bold;color:red"></span><br>
+			<script>
+				var sWD = document.getElementById("wd");
+				var w = document.getElementById("c");
+				w.innerHTML = sWD.value;
+
+				sWD.oninput = function() {
+					w.innerHTML = this.value;
+				}
+			</script>
+			<br>
+			Game Design:<br>
+			<input type="range" min="1" max="7" value="4" class="slider" id="gd">
+			<span id="d" style="font-weight:bold;color:red"></span><br>
+			<script>
+				var sGD = document.getElementById("gd");
+				var v = document.getElementById("d");
+				v.innerHTML = sGD.value;
+
+				sGD.oninput = function() {
+					v.innerHTML = this.value;
+				}
+			</script>
+			<br>
+			Algorithms:<br>
+			<input type="range" min="1" max="7" value="4" class="slider" id="al">
+			<span id="e" style="font-weight:bold;color:red"></span><br>
+			<script>
+				var sAL = document.getElementById("al");
+				var u = document.getElementById("e");
+				u.innerHTML = sAL.value;
+
+				sAL.oninput = function() {
+					u.innerHTML = this.value;
+				}
+			</script>
+			<br>
+			Computer Engineering:<br>
+			<input type="range" min="1" max="7" value="4" class="slider" id="ce">
+			<span id="f" style="font-weight:bold;color:red"></span><br>
+			<script>
+				var sCE = document.getElementById("ce");
+				var t = document.getElementById("f");
+				t.innerHTML = sCE.value;
+
+				sCE.oninput = function() {
+					t.innerHTML = this.value;
+				}
+			</script>
+			<br>
+			Electrical Engineering:<br>
+			<input type="range" min="1" max="7" value="4" class="slider" id="ee">
+			<span id="g" style="font-weight:bold;color:red"></span><br>
+			<script>
+				var sEE = document.getElementById("ee");
+				var s = document.getElementById("g");
+				s.innerHTML = sEE.value;
+
+				sEE.oninput = function() {
+					s.innerHTML = this.value;
+				}
+			</script>
+			<br>
+			Systems Design:<br>
+			<input type="range" min="1" max="7" value="4" class="slider" id="se">
+			<span id="h" style="font-weight:bold;color:red"></span><br>
+			<script>
+				var sSE = document.getElementById("se");
+				var r = document.getElementById("h");
+				r.innerHTML = sSE.value;
+
+				sSE.oninput = function() {
+					r.innerHTML = this.value;
+				}
+			</script>
 			<br>
 			<button type = "button"> Submit </button>
 		</form>
