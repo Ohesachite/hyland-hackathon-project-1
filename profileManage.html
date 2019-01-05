@@ -16,9 +16,18 @@
         <input type="text" name="name"><br>
         <br>
         Gender:<br>
-        <input type="radio" ID="gender" name="gender" value="male" checked> Male<br>
-        <input type="radio" ID="gender" name="gender" value="female"> Female<br>
-        <input type="radio" ID="gender" name="gender" value="other"> Other <br>
+        <div class="checkboxes">
+            <div id="col1">
+                <p class="row0">Male</p>
+                <p class="row1">Female</p>
+                <p class="row2">Other</p> 
+            </div>
+            <div id="col2">
+                <input type="radio" class="row0" name="gender" value="male" checked> 
+                <input type="radio" class="row1" name="gender" value="female"> 
+                <input type="radio" class="row2" name="gender" value="other">
+            </div>
+        </div>
         <br>
         Age:<br>
         <input type="number" name="age"><br><br>
