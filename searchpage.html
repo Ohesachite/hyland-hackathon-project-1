@@ -1,0 +1,52 @@
+<html>
+	<head>
+	<link rel="stylesheet" href="searchpagec.css">
+	</head>
+	
+	<body>
+	
+	<form>
+		<div class="box">
+			<input type="text" id="search" list="keywords" placeholder="Search"/>
+			<datalist id="keywords"> 
+			<option value="Computer Programming"> </option>
+			<option value="Game Design"> </option>
+			<option value="Android App Development"> </option>
+			<option value="Algorithms"> </option>
+			<option value="Computer Engineering"> </option>
+			<option value="Electrical Engineering"> </option>
+			<option value="System Design"> </option>
+			<option value="Java"> </option>
+			<option value="C++"> </option>
+			<option value="C#"> </option>
+			<option value="C"> </option>
+			<option value="HTML"> </option>
+			<option value="CSS"> </option>
+			<option value="JavaScript"> </option>
+			<option value="SQL"> </option>
+			<option value="Python"> </option>
+			<option value="XML"> </option>
+			</datalist>
+		</div>
+		
+	<input type="button" id="button" value="Add" onclick="addRow('table')"/>
+	</form>
+	
+	<p> Input the range of skill proficiency you seek. </p>
+	<table id="table">
+	<col width = "25%">
+	<th> Skill </th>
+	<th> Lowest Proficiency </th>
+	<th> Highest Proficiency </th>
+	<th> Remove Skill </th>
+	</table>
+	<br>
+	<br>
+	<br>
+	<div class ="submit">
+	<input type="submit" id="submit" onclick="submitButton('table')"/>
+	</div>
+
+	<script type="text/javascript" src="searchpagejs.js"></script>
+	</body>
+</html>

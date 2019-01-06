@@ -1,0 +1,111 @@
+html, body, #main-wrapper {
+  background-color: var(--lite-bg-1);
+  color: var(--lite-tx-1);
+  font-size: var(--font-base);
+  font-family: 'Ubuntu', sans-serif;
+  box-sizing: border-box;
+}
+.box{
+    width: 100%;
+	overflow: hidden;
+}
+.autocomplete {
+  /*the container must be positioned relative:*/
+  position: relative;
+  display: inline-block;
+}
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+  flex-grow:4;
+}
+input[type=text] {
+  background-color: #f1f1f1;
+  width: 100%;
+}
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+
+
+#search {
+    margin: 0 auto;
+	width: 100%;
+	height: 50px;
+    display: block;
+	font: Roboto;
+	font-size: 15pt;
+	padding-left: 10pt;
+	padding-right: 10pt;
+}
+
+form {
+  /* This bit sets up the horizontal layout */
+  display:flex;
+  flex-direction:row;
+  
+  /* This bit draws the box around it */
+  border:1px solid grey;
+  padding:2px;
+}
+
+#button {
+	width: 100px;
+	font: Roboto;
+	font-size: 15pt; 
+	background-color: #003282;
+	color: #fff;
+}
+
+#table {
+	width: 100%;
+	font-size: 15pt;
+	border-bottom: 1px solid #ddd;
+	table-layout: fixed;
+}
+
+th {
+	text-align: left;
+	background-color: #003282;
+	color: #fff;
+	padding-left: 5px;
+	height: 40px;
+}
+
+td {
+	height: 40px;
+}
+
+#submit {	
+	position:absolute;
+	bottom: 0;
+	right: 0;
+	background-color: #003282;
+	color: #fff;
+	font-size: 15pt;
+	width: 100 px;
+}
+
+.submit {
+		position: relative;
+}
+
+
+p {
+	font-size: 15pt;
+}
+
+
+
+
