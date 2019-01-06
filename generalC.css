@@ -1,16 +1,17 @@
 body{
---backcol:#acfca6;
---textcol:#000000;
+--backcol:#003282;
+--textcol:#ddeaff;
+--headcol:#2d8d6e;
 --margin:4px;
 --padding:8px;
 /*.basic{*/
 font-family:'Roboto', sans-serif;
-text-align:center;
+text-align:Left;
 color:var(--textcol);
 background-color:var(--backcol);
 height:100%
 }
 
 h1{
-color:#66ce5f;
+color:var(--textcol)
 }

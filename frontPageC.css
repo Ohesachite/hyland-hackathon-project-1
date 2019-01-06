@@ -1,24 +1,3 @@
-body{
---backcol:#acfca6;
---textcol:#000000;
---margin:4px;
---padding:8px;
-}
-
-#headText{
-color:#66ce5f;
-background-color:var(--backcol);
-margin:var(--margin);
-border-radius:var(--margin)
-}
-
-.basic{
-font-family:'Roboto', sans-serif;
-text-align:center;
-color:var(--textcol);
-background-color:var(--backcol);
-height:100%
-}
 
 #mainframe{
 display:grid;
@@ -38,6 +17,7 @@ background-color:var(--backcol);
 	height:100%;
 	
 }
+.textbar
 
 #Column2{
 display:grid;
@@ -54,4 +34,8 @@ border-top:0px;
 
 #bottom{
 border-bottom:0px;
+}
+iframe{
+height:100%;
+width:100%;
 }
