@@ -3,8 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
+    <ul>
+        <li><a class="active" href="#home">Help</a></li>
+        <li><a href="#news">Ask Questions</a></li>
+        <li><a href="#contact">Home</a></li>
+        <li><a href="#about">Contact Us</a></li>
+        <li><a href="#about">About</a></li>
+
+    </ul>
     <center>
         <h1>Help Page</h1>
+        <h2>How Can We Help You?</h2>
     </center>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -77,7 +86,36 @@
                 border: 1px solid #ccc;  
               }
             }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #4CAF50;
+        }
         </style>
+
+
 </head>
 
 <body>
@@ -89,6 +127,8 @@
             </form>
         </div>
     </div>
+
+
 
     <br>
     Was this helpful?<br>
