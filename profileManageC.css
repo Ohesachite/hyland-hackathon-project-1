@@ -22,6 +22,7 @@ select{
   display: inline-block;
   border: none;
   background-color:var(--textcol);
+  border-radius:var(--margin);
 }
 
 

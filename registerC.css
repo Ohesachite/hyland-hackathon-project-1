@@ -2,28 +2,30 @@
 display:grid;
 grid-template-columns:1fr 1fr 1fr;
 height:100%;
-border: 3px double var(--titlecolor);
+border: 3px double #2d8d6e;
 font-size:3vw;
-font-align:center;
+text-align:center;
+
 }
 
 #col1{
 grid-column-start:1;
 grid-column-end:2;
-vertical-align:center;
-border: 3px double #66ce5f 
+border: 3px double #2d8d6e; 
+padding-top:80%;
 }
 
 #col2{
 grid-column-start:2;
 grid-column-end:3;
-vertical-align:center;
-border: 3px double #66ce5f 
+border: 3px double #2d8d6e;
+padding-top:80%;
 }
 
 #col3{
 grid-column-start:3;
 grid-column-end:4;
-vertical-align:center;
-border: 3px double #66ce5f 
+border: 3px double #2d8d6e;
+padding-top:80%;
+
 }
