@@ -2,27 +2,28 @@
 display:grid;
 grid-template-columns:1fr 1fr 1fr;
 height:100%;
-border: 3px double #66ce5f;
+border: 3px double var(--titlecolor);
 font-size:3vw;
+font-align:center;
 }
 
 #col1{
 grid-column-start:1;
 grid-column-end:2;
-padding-top:80%;
+vertical-align:center;
 border: 3px double #66ce5f 
 }
 
 #col2{
 grid-column-start:2;
 grid-column-end:3;
-padding-top:80%;
+vertical-align:center;
 border: 3px double #66ce5f 
 }
 
 #col3{
 grid-column-start:3;
 grid-column-end:4;
-padding-top:80%;
+vertical-align:center;
 border: 3px double #66ce5f 
 }
