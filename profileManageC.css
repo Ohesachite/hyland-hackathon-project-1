@@ -47,6 +47,10 @@ button:hover {
   opacity:1;
 }
 
+#preview{
+	width:50%
+}
+
 /* Extra styles for the cancel button */
 .cancelbtn {
   padding: 14px 20px;
