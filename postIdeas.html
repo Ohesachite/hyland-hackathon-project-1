@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="profileManageC.css">
+    <style>
+        body {
+              background-image: url("https://hookagency.com/wp-content/uploads/2015/11/hazemaster-gray-gradient-ui-background.jpg");
+            }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #4CAF50;
+        }
+    </style>
+    <center>
+        <h1>Post Your Idea</h1>
+    </center>
+</head>
+
+<body>
+    <ul>
+        <li><a class="active" href="TryHome.html">Home</a></li>
+        <li><a href="help.html">Help</a></li>
+        <li><a href="contactUs.html">Contact Us</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul><br>
+    Description of Your Idea:<br>
+    <textarea rows="5" cols="150" name="message" id="message"></textarea><br>
+
+
+    <form id="form" runat="server">
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
