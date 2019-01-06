@@ -5,12 +5,12 @@ outline:none;
 }
 select{
 
- width: 63%;
+ width: 60%;
   padding: 15px;
   margin: 5px 0 22px 0;
   display: inline-block;
   border: none;
-  background: #f1f1f1;
+  background: var(--textcol);
 }
 /* {box-sizing: border-box} */
 
@@ -21,7 +21,7 @@ select{
   margin: 5px 0 22px 0;
   display: inline-block;
   border: none;
-  background: #f1f1f1;
+  background-color:var(--textcol);
 }
 
 
@@ -32,8 +32,8 @@ hr {
 
 /* Set a style for all buttons */
 input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
+  background-color: #2d8d6e;
+  color: var(--textcol);
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
@@ -79,16 +79,19 @@ button:hover {
 
 .checkboxes{
 display:grid;
-grid-template-columns:2;
+grid-template-columns:1fr 3fr;
 text-align:left;
 }
 
 #col1{
+vertical-align:center;
 grid-column-start:1;
 grid-column-end:2;
 }
 
 #col2{
+vertical-align:center;
+
 grid-column-start:2;
 grid-column-end:3;
 }
