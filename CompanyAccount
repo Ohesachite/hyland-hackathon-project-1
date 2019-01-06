@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="generalC.css">
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <meta charset="UTF-8">
+    <style>
+        h1 {
+            height: 40px;
+            color: white;
+            background-color: rgb(33, 148, 4, 0.753);
+        }
+
+        .topleft {
+            position: absolute;
+            top: 8px;
+            left: 16px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="title">
+        <center>
+            <h1> Ayy Lmao </h1> <!-- Company Name-->
+        </center>
+    </div>
+    <br>
+    <!-- If possible, make a CSS so that this and the title are shifted to the left -->
+    <div id="leftSide">
+        <!-- Body texts-->
+        <a id="img">
+            <img src="http://www.hyland.com/-/media/Hyland/HylandCareers/in-content/logos/hyland.svg" alt="Hyland"
+                width="138" height="52">
+        </a> <!-- Compant Image-->
+
+
+
+    </div>
+    </div>
+    </div>
+    <h5>Short Description:</h5>
+    <p id="p0">There is no god but ayylah and lmaohammad is the messenger of god</p>
+    <h5> What we look for: </h5>
+    <!-- Find a way to divide to incorporate 5 stars as the review? -->
+    <!-- Also the percentages should be configured to fit the data, find a way to do that -->
+    <p> Computer programming: 95% </p>
+    <p> Java: 5% </p>
+    </div>
+    <br>
+    <div id="listing">
+        <h2> Recent Listings: </h2> <!-- This heading might not be needed -->
+        <!-- Recent listings should have a list, also make on all seperate by divs -->
+        <div>
+            <h3>Software Engineer</h3>
+            <p>Your standard ayy lmao job</p>
+            <!-- These percentages should also be lifted from the data -->
+            <form>
+                <b>Salary:</b> <span id="salary">$100,000</span> &nbsp;&nbsp;&nbsp;&nbsp;
+                <b>Skills required:</b> <span id="skills">Computer programming</span>
+        </div>
+</body>
+
+</html>
